@@ -1,0 +1,30 @@
+{
+  "name": "jarvis",
+  "version": "1.0.0",
+  "description": "slack custom bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "jarvis"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/evorts/slackvis.git"
+  },
+  "keywords": [
+    "slack",
+    "bot"
+  ],
+  "author": "Steven Pangemanan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evorts/slackvis/issues"
+  },
+  "homepage": "https://github.com/evorts/slackvis#readme",
+  "dependencies": {
+    "@slack/client": "^3.10.0",
+    "rimraf": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0"
+  }
+}
