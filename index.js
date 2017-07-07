@@ -46,10 +46,10 @@ let config = {
     action: {
         cleanup: {
             web   : {
-                baseDir: process.env.BOT_CLEANUP_DIR_WEB || '/html/www.mataharimall.com/'
+                baseDir: process.env.BOT_CLEANUP_DIR_WEB || ''
             },
             mobile: {
-                baseDir: process.env.BOT_CLEANUP_DIR_MOBILE || '/html/m.mataharimall.com/'
+                baseDir: process.env.BOT_CLEANUP_DIR_MOBILE || ''
             }
         }
     }
@@ -60,7 +60,7 @@ let rtm = new RtmClient(config.bot.token);
 let slack = {
     bot     : {
         id        : '', //fill this id when connected
-        name      : process.env.SLACK_BOT_NAME || 'mmarvis',
+        name      : process.env.SLACK_BOT_NAME || 'maeda',
         channels  : [],
         channelIds: [],
         team      : undefined
